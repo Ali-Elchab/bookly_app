@@ -3,6 +3,7 @@ import 'package:bookly_app/Features/Home/presentation/views/widgets/featured_boo
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:bookly_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -10,7 +11,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.all(24.0),
+      padding: EdgeInsets.all(30.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -52,22 +53,27 @@ class BestSellerListViewItem extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 20.0),
-          const Column(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'The Great Gatsby',
-                style: Styles.textStyle18,
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: const Text(
+                  'Harry Potter and the Philosopher\'s Stone',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Styles.textStyle20,
+                ),
               ),
-              SizedBox(height: 10.0),
-              Text(
+              const SizedBox(height: 10.0),
+              const Text(
                 'F. Scott Fitzgerald',
                 style: TextStyle(
                   color: Colors.grey,
                 ),
               ),
-              SizedBox(height: 10.0),
-              Text(
+              const SizedBox(height: 10.0),
+              const Text(
                 'The Great Gatsby is a novel  .',
                 style: TextStyle(
                   color: Colors.grey,
