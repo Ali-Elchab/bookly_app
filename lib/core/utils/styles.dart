@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 abstract class Styles {
   static const textStyle18 = TextStyle(
@@ -10,11 +11,10 @@ abstract class Styles {
     fontSize: 20,
     fontWeight: FontWeight.normal,
   );
-  static const textStyle30 = TextStyle(
+  static final TextStyle textStyle30 = GoogleFonts.playfairDisplay(
     fontSize: 30,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w800,
   );
-
   static const textStyle14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.normal,
@@ -24,3 +24,8 @@ abstract class Styles {
     fontWeight: FontWeight.w500,
   );
 }
+
+const textStyle20 = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.normal,
+);
