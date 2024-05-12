@@ -1,12 +1,3 @@
-abstract class Failure {
-  final String message;
+abstract class Failure {}
 
-  Failure(this.message);
-
-  @override
-  String toString() => message;
-}
-
-class ServerFailure extends Failure {
-  ServerFailure(String message) : super(message);
-}
+class ServerFailure extends Failure {}
