@@ -1,4 +1,3 @@
-import 'package:bookly_app/Features/Home/presentation/views/widgets/book_list_view_item.dart';
 import 'package:bookly_app/Features/Search/presentation/views/widgets/custom_search_field.dart';
 import 'package:bookly_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
