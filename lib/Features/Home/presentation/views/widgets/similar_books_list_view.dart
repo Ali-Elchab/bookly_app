@@ -13,7 +13,10 @@ class SimilarBooksListView extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.all(5.0),
-              child: CustomBookImage(),
+              child: CustomBookImage(
+                imageUrl:
+                    'https://www.designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg',
+              ),
             );
           }),
     );
