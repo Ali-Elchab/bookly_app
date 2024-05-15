@@ -1,16 +1,33 @@
-# bookly_app
+# Bookly App
 
-A new Flutter project.
+A Flutter application that fetches Google Books API to display books about programming. It showcases the use of Bloc and Cubit architectures for state management, focusing on best practices and the practical use of MVVM.
+
+![Group 8](https://github.com/Ali-Elchab/bookly_app/assets/106644215/ceaa708f-a879-4256-8628-1ced85b781da)
+
+
+## Why Bloc and Cubit?
+
+### Bloc
+- Utilized for managing complex state dynamics where multiple events lead to state changes.
+- Ideal for complex business logic, benefiting from a clear separation of events and state transitions.
+
+### Cubit
+- Employed for simpler state management scenarios where direct state updates are sufficient.
+- Reduces boilerplate by eliminating the event layer, making the code simpler and more direct.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Follow these steps to get a local copy running:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+# Clone the repository
+git clone https://github.com/Ali-Elchab/bookly_app.git
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Navigate to the directory
+cd bookly_app
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Install dependencies
+flutter pub get
+
+# Run the app
+flutter run
