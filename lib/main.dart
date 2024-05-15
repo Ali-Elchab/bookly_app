@@ -33,10 +33,25 @@ class Bookly extends StatelessWidget {
         routerConfig: AppRouter.router,
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
-          scaffoldBackgroundColor: kPrimaryColor,
+          scaffoldBackgroundColor: Colors.transparent,
           textTheme:
               GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
         ),
+        builder: (context, child) {
+          return Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  kPrimaryColor,
+                  Color(0x73032564) // A slightly darker shade for the gradient
+                ],
+              ),
+            ),
+            child: child,
+          );
+        },
       ),
     );
   }
